@@ -8,13 +8,14 @@ function digitOperPressed(e) {// e- event якась подія яку буде 
   e.preventDefault();   //дія перша preventDefault відключає відправку форми
  display.value += e.target.innerText; // e.target таргет це якраз кнопка яку натиснули
 }// innertext вмыст кнопки
+
 //ця частина для дорівнюю
 const equal = document.querySelector('.eq');
-equal.addEventListener('click', equalPressed);
+equal.addEventListener('click', equalPressed);// при натисканні = буде виконуватись функція 
 
 function equalPressed(e){
     e.preventDefault();
-    display.value = eval(display.value);
+    display.value = eval(display.value);// display.value - це значення та команди  які відображаються на дисплеї
 }
 
 
